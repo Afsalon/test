@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>data</title>
+  </head>
+  <body>
+    <div class="djang">
+      {%if u%}
+        {% for x in u%}
+        <ol>
+          <li>
+          <ul>
+            <li>{{x.name}}</li>
+            <li>{{x.email}}</li>
+          </ul>
+        </li>
+        </ol>
+        {% endfor %}
+        {%else%}
+        <p>no data</p>
+        {% endif %}
+
+
+    </div>
+
+
+
+  </body>
+</html>
